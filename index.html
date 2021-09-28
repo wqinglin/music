@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <title>网抑云</title>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/wow.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/jq.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+
+<body>
+    <!-- 创建外部容器 -->
+    <div class="top-bar wid clearfix">
+        <div class="top-bar-wrap">
+            <div class="logo">
+                <img src="./image/1.png" alt="网易云">
+            </div>
+            <ul class="list">
+                <li><a href="#">发现音乐</a></li>
+                <li><a href="#">我的音乐</a></li>
+                <li><a href="#">朋友</a></li>
+                <li><a href="#">商城</a></li>
+                <li><a href="#">音乐人</a></li>
+                <li class="hot">
+                    <a href="#">下载客户端</a>
+                    <i class="iconfont icon-hot"></i>
+                </li>
+            </ul>
+            <div class="info">
+                <div class="select">
+                    <i class="iconfont icon-fangdajing"></i>
+                    <input class="search" type="text" name="username" placeholder="错位时空" novalidate>
+                    <ul class="seek-up"></ul>
+                </div>
+                <div class="inner-collect">
+                    <a href="javascript:;">
+                        <input class="btn btn1" id="btn2" type="button" value="收藏 (0)">
+                        <ul class="collect1">
+                            空空如也
+                        </ul>
+                    </a>
+                </div>
+                <a href="#">
+                    <input class="btn" type="button" value="创作者中心">
+                </a>
+                <a href="#">
+                    <span class="register">登录</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- 红色导航栏 -->
+    <div class="outer-nav-wrap wid clearfix">
+        <ul class="inner-nav-wrap">
+            <li><a href="#">推荐</a></li>
+            <li><a href="#">排行榜</a></li>
+            <li>
+                <a class="sign" href="#">
+                    歌单<sup>&reg;</sup>
+                </a>
+            </li>
+            <li><a href="#">主播电台</a></li>
+            <li><a href="#">歌手</a></li>
+            <li><a href="#">新碟上价</a></li>
+        </ul>
+    </div>
+    <!-- 轮播图 -->
+    <div class="carousel-wrap wid clearfix" id="bg">
+        <div class="wcarousel">
+            <div class="mycarousel">
+                <div id="carousel-example-generic" class="carousel slide" data-interval="false">
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" class="active"></li>
+                        <li data-slide-to="1"></li>
+                        <li data-slide-to="2"></li>
+                        <li data-slide-to="3"></li>
+                        <li data-slide-to="4"></li>
+                        <li data-slide-to="5"></li>
+                        <li data-slide-to="6"></li>
+                        <li data-slide-to="7"></li>
+                        <li data-slide-to="8"></li>
+                        <li data-slide-to="9"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" id="tt1">
+                            <img src="./image/2.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt2">
+                            <img src="./image/3.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt3">
+                            <img src="./image/4.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt4">
+                            <img src="./image/5.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt5">
+                            <img src="./image/6.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt6">
+                            <img src="./image/7.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt7">
+                            <img src="./image/8.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt8">
+                            <img src="./image/l9.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                        <div class="item" id="tt9">
+                            <img src="./image/l10.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+
+                        <div class="item" id="tt10">
+                            <img src="./image/l11.jpg" alt="...">
+                            <div class="carousel-caption">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" id="left-control" href="#carousel-example-generic" role="button"
+                        data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" id="right-control" href="#carousel-example-generic" role="button"
+                        data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="downloud">
+                <img src="./image/8.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- 热门推荐 -->
+    <div class="content-wrap wid clearfix">
+        <div class="bigcon">
+            <div class="exp">
+                <div class="left-con">
+                    <div class="content">
+                        <div class="title">
+                            <i class="iconfont icon-yuanquan"></i>
+                            <a href="#">热门推荐</a>
+                        </div>
+                        <ul class="little-title">
+                            <li><a href="#">华语</a></li>
+                            <li class="line">|</li>
+                            <li><a href="#">流行</a></li>
+                            <li class="line">|</li>
+                            <li><a href="#">摇滚</a></li>
+                            <li class="line">|</li>
+                            <li><a href="#">民谣</a></li>
+                            <li class="line">|</li>
+                            <li><a href="#">电子</a></li>
+                        </ul>
+                        <div class="right-more">
+                            <span><a href="#">更多</a></span>
+                            <i class="iconfont icon-jiantou"></i>
+                        </div>
+                    </div>
+                    <div class="linee"></div>
+                    <ul class="music clearfix">
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/9.jpg" alt="">
+                                </div>
+                                <span>
+                                    [一周新歌推荐] A妹新专辑《Positions》豪华版释出
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/10.jpg" alt="">
+                                </div>
+                                <span>
+                                    献给每个孤独的人 愿能被世界温柔以待
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/11.jpg" alt="">
+                                </div>
+                                <span>
+                                    还好大雾四起 藏匿难言爱意
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="last wow animate__animated animate__fadeInDown" data-wow-delay="0.5s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/12.jpg" alt="">
+                                </div>
+                                <span>
+                                    盘点！自古春晚出金曲
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="music clearfix">
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-delay="0.2s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/18.jpg" alt="">
+                                </div>
+                                <span>
+                                    [送给粉丝的歌] 双向奔赴的爱才最有意义79万
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-delay="0.3s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/19.jpg" alt="">
+                                </div>
+                                <span>
+                                    土嗨(BGM)带你上高速，请乘客带好安全带
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="wow animate__animated animate__fadeInDown" data-wow-delay="0.4s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/20.jpg" alt="">
+                                </div>
+                                <span>
+                                    从被爱的那一天开始 我要对你说声谢谢
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="last wow animate__animated animate__fadeInDown" data-wow-delay="0.5s">
+                            <a href="#">
+                                <div class="img-wrap">
+                                    <img src="./image/21.jpg" alt="">
+                                </div>
+                                <span>
+                                    运动 有氧 健身BGM｜一半自律 一半热爱生活
+                                </span>
+                                <div class="toumingzi">
+                                    <i class="iconfont icon-erji"></i>
+                                    45641万&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="iconfont icon-bofang"></i>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- 新碟上架 -->
+                    <div class="content">
+                        <div class="title">
+                            <i class="iconfont icon-yuanquan"></i>
+                            <a href="#">新碟上价</a>
+                        </div>
+                        <div class="right-more">
+                            <span><a href="#">更多</a></span>
+                            <i class="iconfont icon-jiantou"></i>
+                        </div>
+                    </div>
+                    <div class="linee"></div>
+                    <div class="putaway">
+                        <div class="contr" id="lc"><
+                        </div>
+                        <ul class="bet-putaway">
+                            <li class="ad wow animate__animated animate__backInLeft" data-wow-delay=".1s">
+                                <a href="#">
+                                    <img src="./image/23.jpg" alt="">
+                                    <i class="iconfont icon-bofang xiaobofang"></i>
+                                    <span>是云白</span>
+                                    <span>秦霄贤</span>
+                                </a>
+                            </li>
+                            <li class="ad wow animate__animated animate__backInLeft" data-wow-delay=".2s">
+                                <a href="#">
+                                    <img src="./image/24.jpg" alt="">
+                                    <i class="iconfont icon-bofang xiaobofang"></i>
+                                    <span> Selena Gomez</span>
+                                    <span>Selena Gomez</span>
+                                </a>
+                            </li>
+                            <li class="ad wow animate__animated animate__backInLeft" data-wow-delay=".3s">
+                                <a href="#">
+                                    <img src="./image/25.jpg" alt="">
+                                    <i class="iconfont icon-bofang xiaobofang"></i>
+                                    <span>2+0+2+1+3= ...</span>
+                                    <span>RADWIMPS</span>
+                                </a>
+                            </li>
+                            <li class="ad wow animate__animated animate__backInLeft" data-wow-delay=".4s">
+                                <a href="#">
+                                    <img src="./image/26.jpg" alt="">
+                                    <i class="iconfont icon-bofang xiaobofang"></i>
+                                    <span>One Last Kiss</span>
+                                    <span>宇多田ヒカル</span>
+                                </a>
+                            </li>
+                            <li class="ad wow animate__animated animate__backInLeft" data-wow-delay=".5s">
+                                <a href="#">
+                                    <img src="./image/27.jpg" alt="">
+                                    <i class="iconfont icon-bofang xiaobofang"></i>
+                                    <span>Promise</span>
+                                    <span>Taylor Swift</span>
+                                </a>
+                            </li>
+                            <li class="ad wow animate__animated animate__backInLeft" data-wow-delay=".4s">
+                                <a href="#">
+                                    <img src="./image/26.jpg" alt="">
+                                    <i class="iconfont icon-bofang xiaobofang"></i>
+                                    <span>One Last Kiss</span>
+                                    <span>宇多田ヒカル</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="contr" id="rc">></div>
+                    </div>
+                    <div class="content">
+                        <div class="title">
+                            <i class="iconfont icon-yuanquan"></i>
+                            <a href="#">榜单</a>
+                        </div>
+                        <div class="right-more">
+                            <span><a href="#">更多</a></span>
+                            <i class="iconfont icon-jiantou"></i>
+                        </div>
+                    </div>
+                    <div class="linee"></div>
+                    <!-- 榜单 -->
+                    <table border="1" rules="cols">
+                        <th>
+                            <a href="#">
+                                <img src="./image/15.jpg" alt="">
+                                <div>
+                                    <span class="ac">飙升榜</span>
+                                    <i class="iconfont icon-bofang"></i>
+                                    <i class="iconfont icon-tianjia"></i>
+                                </div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#">
+                                <img src="./image/28.jpg" alt="">
+                                <div>
+                                    <span class="ac">新歌榜</span>
+                                    <i class="iconfont icon-bofang"></i>
+                                    <i class="iconfont icon-tianjia"></i>
+                                </div>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#">
+                                <img src="./image/29.jpg" alt="">
+                                <div>
+                                    <span class="ac">原创榜</span>
+                                    <i class="iconfont icon-bofang"></i>
+                                    <i class="iconfont icon-tianjia"></i>
+                                </div>
+                            </a>
+                        </th>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInLeft" data-wow-delay=".3s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span>1</span>
+                                    <span class="aa">
+                                        无渴不爽
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span>1</span>
+                                    <span class="aa">
+                                        还是会想你
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span>1</span>
+                                    <span class="aa">
+                                        爱就一个字
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInRight" data-wow-delay=".3s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span>2</span>
+                                    <span class="aa">
+                                        沈园外
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span>2</span>
+                                    <span class="aa">
+                                        大风吹
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span>2</span>
+                                    <span class="aa">
+                                        奇妙的惊喜
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInLeft" data-wow-delay=".4s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span>3</span>
+                                    <span class="aa">
+                                        失眠城市
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span>3</span>
+                                    <span class="aa">
+                                        Coin
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span>3</span>
+                                    <span class="aa">
+                                        不爱我
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInRight" data-wow-delay=".4s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">4</span>
+                                    <span class="aa">
+                                        萱草花
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">4</span>
+                                    <span class="aa">
+                                        完美降落
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">4</span>
+                                    <span class="aa">
+                                        慢热
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInLeft" data-wow-delay=".5s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">5</span>
+                                    <span class="aa">
+                                        还是会想你
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">5</span>
+                                    <span class="aa">
+                                        Promise
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">5</span>
+                                    <span class="aa">
+                                        大风吹
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInRight" data-wow-delay=".5s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">6</span>
+                                    <span class="aa">
+                                        等到世界颠覆
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">6</span>
+                                    <span class="aa">
+                                        Encore
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">6</span>
+                                    <span class="aa">
+                                        无可不爽
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInLeft" data-wow-delay=".6s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">7</span>
+                                    <span class="aa">
+                                        Flu
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">7</span>
+                                    <span class="aa">
+                                        She
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">7</span>
+                                    <span class="aa">
+                                        Encore
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInRight" data-wow-delay=".6s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">8</span>
+                                    <span class="aa">
+                                        我从哪里来
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">8</span>
+                                    <span class="aa">
+                                        双向奔赴
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">8</span>
+                                    <span class="aa">
+                                        最后为你唱首歌
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="wow animate__animated animate__backInLeft" data-wow-delay=".7s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">9</span>
+                                    <span class="aa">
+                                        渺小的独特
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">9</span>
+                                    <span class="aa">
+                                        不哭
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">9</span>
+                                    <span class="aa">
+                                        你的影子
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr id="kongge" class="wow animate__animated animate__backInRight" data-wow-delay=".7s">
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">10</span>
+                                    <span class="aa">
+                                        花,太阳，彩虹，你
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">10</span>
+                                    <span class="aa">
+                                        Encore
+                                    </span>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    <span class="af">10</span>
+                                    <span class="aa">
+                                        I lost
+                                    </span>
+                                </a>
+                            </td>
+                        </tr>
+                        <tfoot class="sa">
+                            <td>
+                                <a href="javascript:;">
+                                    查看全部>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    查看全部>
+                                </a>
+                            </td>
+                            <td>
+                                <a href="javascript:;">
+                                    查看全部>
+                                </a>
+                            </td>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- 边栏 -->
+            <div class="introduce">
+                <div class="users">
+                    <span>登录网易云音乐，可以享受无限收藏的乐趣，并且无限同步到手机</span>
+                    <a href="javascript:;"><button>用户登录</button></a>
+                </div>
+                <div class="aside">
+                    <div class="asi clearfix">
+                        <div class="singer">入驻歌手</div>
+                        <div class="sel-all">查看全部></div>
+                    </div>
+                    <div class="line clearfix"></div>
+                    <div class="star clearfix wow animate__animated animate__backInRight" data-wow-delay=".3s">
+                        <div class="pict">
+                            <img src="./image/16.jpg" alt="">
+                        </div>
+                        <div class="star-info">
+                            <span>z张惠妹aMEI</span>
+                            <span>台湾歌手张惠妹</span>
+                        </div>
+                    </div>
+
+                    <div class="star clearfix wow animate__animated animate__backInRight" data-wow-delay=".4s">
+                        <div class="pict">
+                            <img src="./image/31.jpg" alt="">
+                        </div>
+                        <div class="star-info">
+                            <span>Fine乐队</span>
+                            <span>独立音乐人</span>
+                        </div>
+                    </div>
+
+                    <div class="star clearfix wow animate__animated animate__backInRight" data-wow-delay=".5s">
+                        <div class="pict">
+                            <img src="./image/32.jpg" alt="">
+                        </div>
+                        <div class="star-info">
+                            <span>萬曉利</span>
+                            <span>民谣歌手</span>
+                        </div>
+                    </div>
+
+                    <div class="star clearfix wow animate__animated animate__backInRight" data-wow-delay=".6s">
+                        <div class="pict">
+                            <img src="./image/33.jpg" alt="">
+                        </div>
+                        <div class="star-info">
+                            <span>音乐人赵雷</span>
+                            <span>民谣歌手</span>
+                        </div>
+                    </div>
+
+                    <div class="star clearfix wow animate__animated animate__backInRight" data-wow-delay=".7s">
+                        <div class="pict">
+                            <img src="./image/38.jpg" alt="">
+                        </div>
+                        <div class="star-info">
+                            <span>王三溥</span>
+                            <span>音乐人</span>
+                        </div>
+                    </div>
+                </div>
+                <a href="#"><button class="apply">申请称为网易人</button></a>
+                <div class="zhubo">热门主播</div>
+                <div class="lined clearfix"></div>
+                <ul class="famous clearfix">
+                    <li class="wow animate__animated animate__fadeInRightBig">
+                        <a href="#">
+                            <div class="picture">
+                                <img src="./image/17.jpg" alt="">
+                            </div>
+                            <div class="star-intr">
+                                <span>陈立</span>
+                                <span>心理学家、美食家陈立教授</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInRightBig">
+                        <a href="#">
+                            <div class="picture">
+                                <img src="./image/34.jpg" alt="">
+                            </div>
+                            <div class="star-intr">
+                                <span>DJ艳秋</span>
+                                <span>著名音乐节目主持人</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInRightBig">
+                        <a href="#">
+                            <div class="picture">
+                                <img src="./image/35.jpg" alt="">
+                            </div>
+                            <div class="star-intr">
+                                <span>国家大剧院古典音乐频道</span>
+                                <span>国家大剧院古典音乐官网</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInRightBig">
+                        <a href="#">
+                            <div class="picture">
+                                <img src="./image/36.jpg" alt="">
+                            </div>
+                            <div class="star-intr">
+                                <span>谢谢收听</span>
+                                <span>南京电台支持人王磬</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wow animate__animated animate__fadeInRightBig">
+                        <a href="#">
+                            <div class="picture">
+                                <img src="./image/37.jpg" alt="">
+                            </div>
+                            <div class="star-intr">
+                                <span>DJ晓苏</span>
+                                <span>独立DJ,CRJ环球广播</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-wrap wid clearfix">
+        <div class="footer">
+            <div class="detail">
+                <ul class="service">
+                    <li><a href="#">游戏条款</a></li>
+                    <li class="gang">|</li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li class="gang">|</li>
+                    <li><a href="#">儿童隐私政策</a></li>
+                    <li class="gang">|</li>
+                    <li><a href="#">版权投诉指导</a></li>
+                    <li class="gang">|</li>
+                    <li><a href="#">意见反馈</a></li>
+                    <li class="gang">|</li>
+                </ul>
+                <span>
+                    网易公司版权所有©1997-2021&nbsp&nbsp
+                    杭州乐读科技有限公司运营：浙网文[2018]3506-263号</br>
+                    违法和不良信息举报电话：0571-89853516 &nbsp;&nbsp;举报邮箱：ncm5990@163.com</br>
+                    粤B2-20090191-18 工业和信息化部备案管理系统网站 &nbsp;<i class="iconfont">&#xe695;</i>
+                    浙公网安备 33010902002564号
+                </span>
+            </div>
+            <div class="flag">
+                <ul class="flag-icon">
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-double-circle"></i>
+                        </a>
+                        <span>用户认证</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-double-circle"></i>
+                        </a>
+                        <span>用户认证</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-double-circle"></i>
+                        </a>
+                        <span>用户认证</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-double-circle"></i>
+                        </a>
+                        <span>用户认证</span>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="iconfont icon-double-circle"></i>
+                        </a>
+                        <span>用户认证</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <iframe class="music-bofang" frameborder="no" border="0" marginwidth="0" marginheight="0" controls autoplay
+        width=100% height=86 src="http://music.163.com/outchain/player?type=2&id=1808492017&auto=1&height=66"></iframe>
+    <!-- 右侧滚动 -->
+    <div class="back-top" id="little-back-top">
+        <div class="direction">^</div>
+        <div class="top">TOP</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
